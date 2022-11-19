@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+
+## this function get a matrics as input
 
 makeCacheMatrix <- function(x = matrix()) {
           invrs=NULL
@@ -16,9 +15,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## below function get the upper function as an input and if there is an inverse matrics it returns and otherwise ,it calculates
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x) {
         invrs=x$getinvrs()
   if( !is.null(invrs) ){ return(invrs)}
   invrs=solve(x$get())
